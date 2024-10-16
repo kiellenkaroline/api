@@ -1,4 +1,4 @@
-                                      Exercicio 1
+                                      Projeto 
 
 
 -  Criei o Banco de dados no DBeaver "alunos_online_em_sala" e dentro desse banco de dados criei
