@@ -18,17 +18,21 @@ public class DisciplinaService {
     DisciplinaRepository disciplinaRepository;
 
     public void criarDisciplina(Disciplina disciplina){
+
         disciplinaRepository.save(disciplina);
     }
 
     public List<Disciplina> listarTodasDisciplinas(){
+
         return disciplinaRepository.findAll();
     }
     public Optional <Disciplina> buscarDisciplinaPorId(Long id){
+
         return disciplinaRepository.findById(id);
     }
 
     public void deletarDisciplinaPorId(Long id){
+
         disciplinaRepository.deleteById(id);
     }
 
