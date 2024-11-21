@@ -17,18 +17,22 @@ public class AlunoService {
     AlunoRepository alunoRepository;
 
     public void criarAluno(Aluno aluno){
+
         alunoRepository.save(aluno);
     }
 
     public List<Aluno> listarTodosAlunos(){
+
         return alunoRepository.findAll();
     }
 
     public Optional <Aluno> buscarAlunoPorId(Long id){
+
         return alunoRepository.findById(id);
     }
 
     public void deletarAlunoPorId(Long id){
+
         alunoRepository.deleteById(id);
     }
 
