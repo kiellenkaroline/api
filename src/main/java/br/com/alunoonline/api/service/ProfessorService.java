@@ -17,18 +17,22 @@ public class ProfessorService {
     ProfessorRepository professorRepository;
 
     public void criarProfessor(Professor professor){
+
         professorRepository.save(professor);
     }
 
     public List<Professor> listarTodosProfessores(){
+
         return professorRepository.findAll();
     }
 
     public Optional <Professor> buscarProfessorPorId(Long id){
+
         return professorRepository.findById(id);
     }
 
     public void deletarProfessorPorId(Long id){
+
         professorRepository.deleteById(id);
     }
 
