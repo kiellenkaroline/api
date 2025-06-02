@@ -11,6 +11,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@Table (name = "matricula_aluno")
 @Entity
 public class MatriculaAluno implements Serializable {
 
@@ -27,10 +28,10 @@ public class MatriculaAluno implements Serializable {
     private Disciplina disciplina;
 
     private Double nota1;
-
     private Double nota2;
 
     @Enumerated(EnumType.STRING)
     private MatriculaAlunoStatusEnum status;
+
 
 }

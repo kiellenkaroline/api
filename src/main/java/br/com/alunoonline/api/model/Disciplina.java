@@ -11,17 +11,16 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@Table (name="disciplinas")
 @Entity
-public class Disciplina implements Serializable{
+public class Disciplina implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String nome;
 
     @ManyToOne
     @JoinColumn(name = "professor_id")
     private Professor professor;
-
 }

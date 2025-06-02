@@ -3,6 +3,7 @@ package br.com.alunoonline.api.controller;
 import br.com.alunoonline.api.model.Professor;
 
 import br.com.alunoonline.api.service.ProfessorService;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.persistence.Id;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,7 +14,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/professor")
-
+@SecurityRequirement(name = "bearer-key")
 public class ProfessorController {
 
     @Autowired
